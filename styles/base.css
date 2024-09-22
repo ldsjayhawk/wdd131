@@ -90,19 +90,12 @@ p{
 }
 
 .card-one {
-    grid-column: 1 / 3 ;
+    grid-column: 1 / 3;
     border: 1px solid black;
     margin: 5px;
 
-
 .card-two {
-    grid-column: 4   ;
-    border: 1px solid red;
-
-    /* margin: 10px;
-    padding: 10px;
-    
-    padding: 1rem;
-    background-color: #bbdeff; */
+    grid-column: 4;
+    border: 1px solid black;\
+    margin: 5px;
 }
-
