@@ -1,10 +1,30 @@
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('list');
+var input = document.querySelector('#favchap');
+var button = document.querySelector('button');
+var list = document.querySelector('list');
 
-const li = document.createElement('li');
-const delButton = document.createElement('button');
-li.textContent = input.value;
-deleteButton.textContent = ❌;
-li.append(delButton);
-list.append(li);
+var li = document.createElement('li');
+var delButton = document.createElement('button');
+
+
+button.addEventListener('click', function() {
+    if (input.value.trim() !== '') {
+        li.textContent = input.value;
+        // delButton.textContent = '❌';
+        // li.append(delButton);
+        li.append(input.value);
+        return ("Chapter Added");
+    } else {
+        return ("Enter Chapter")
+        // document.getElementById(input.focus();
+    };
+});
+
+delButton.addEventListener('click', function() {
+    list.removeChild('li');
+    input.focus();
+});
+
+input.value = '';
+input.focus();
+
+
