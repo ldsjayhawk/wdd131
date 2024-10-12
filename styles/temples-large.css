@@ -19,7 +19,7 @@
 	}
 
 	.navigation li {
-		display: none;
+		display: block;
 	}
 	
 	.navigation ul {
