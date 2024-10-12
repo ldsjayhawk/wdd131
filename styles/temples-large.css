@@ -12,6 +12,15 @@
 	#menu {
 		display: none; 
 	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+	}
+
+	.navigation li {
+		display: none;
+	}
 	
 	.navigation ul {
 		display: flex;

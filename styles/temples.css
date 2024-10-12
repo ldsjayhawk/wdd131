@@ -33,10 +33,12 @@ h2 {
 }
 
 #menu {
+    display: block;
     font-size: 1.5rem;
     position: fixed;
     top: 10px;
     right: 10px;
+    color: #fff;
 }
 
 #menu::before {
@@ -51,11 +53,16 @@ h2 {
     list-style-type: none;
     margin: 0 auto;
     max-width: 500px;
+    padding-top: 20px;
 }
 
-/* .navigation li {
+.navigation li {
     display: none;
-} */
+}
+
+.navigation.open li{
+    display: block;
+}
 
 .navigation a {
     display: block;
