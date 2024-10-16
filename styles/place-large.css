@@ -1,5 +1,8 @@
 @media (min-width: 750px) {
 
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 .data {
@@ -16,15 +19,16 @@
 .weather {
     position: absolute;
     background-color: #fff;
-    top: 275px;
-    right: 70px;
+    top: 350px;
+    right: 40px;
     padding: 10px;
     text-align: center;
     opacity: .7;
-    width: 300px;   
+    width: 350px;   
 }
 
 picture p {
     font-size: 1.25em;
     font-family: var(--paragraph-font);
 }
+} 
