@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>WDD 131 - Country Page - Cris Altman</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Cris Altman | Country Page">
+        <meta name="author" content="Cris Altman">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>Kansas City</h1>
+    </header>
+    <div class="hero">
+        <picture class="union-station">
+            <source media="(min-width: 1000px)" srcset="images\hero-large.webp">
+            <img src="images/hero-small.webp" alt="Union Station, Kansas City" width="1505px">
+        </picture>
+    </div>
+    <div class="hero-caption">
+        <p>Union Station, Kansas City - photo by Andrew Peterson</p>
+    </div>
+    <main>
+        <div class="data">
+            <h2>Data</h2>
+            <h3>Area:</h3>
+            <h4>319.03 sq mi:</h4>
+            <h3>Population:</h3>
+            <h4>509,297</h4>
+            <h3>Mayor:</h3>
+            <h4>Quentin Lucas</h4>
+            <!-- <h3>Currency:</h3>
+            <h4>US Dollar:</h4> -->
+            <h3>Time Zone:</h3>
+            <h4>UTC-6 Central Time:</h4>
+            <h3>Area Code:</h3>
+            <h4>Kansas: 913 / Missouri: 816</h4>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img class = "weather-icon" src="images/weather-icon.svg" alt="weather" width="50px">
+            <h3>Temperature:</h3>
+            <h4><span id="temp"></span> °F</h4>
+            <h3>Conditions:</h3>
+            <h4><span id="condition"></span></h4>            
+            <h3>Wind:</h3>
+            <h4><span id="wind"></span> km/h</h4>
+            <h3>Wind Chill:</h3>
+            <h4><span id="windChill"></span> °F</h4>       
+
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> Cris Altman  Kansas </p> 
+        <p> <span id = "year"></span>Last Modified: <span id="lastmodified"></span></p>    
+    </footer>
+</body>
+</html>
