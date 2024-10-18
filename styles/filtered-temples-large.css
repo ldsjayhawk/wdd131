@@ -1,0 +1,35 @@
+	
+/* medium - 2 columns */
+@media (min-width: 550px) {
+	.grid-container{
+		grid-template-columns: auto auto;	
+	}
+}
+
+/* large - 3 columns */
+@media (min-width: 700px) {
+
+	#menu {
+		display: none; 
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+	}
+
+	.navigation li {
+		display: block;
+	}
+	
+	.navigation ul {
+		display: flex;
+		flex: 1 1 100%;
+	}
+
+	.grid-container{
+		grid-template-columns: auto auto auto;
+	}
+}
+
+
