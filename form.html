@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>WDD 131 - Product Form - Cris Altman</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Cris Altman | Product Form">
+        <meta name="author" content="Cris Altman">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+   </head>
+
+<body>
+    
+<!-- CONTENT HERE -->
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method = "get" action = "thanks.html" class="review">
+            <fieldset>
+                    <!-- Product Name Dropdown -->
+                    <label>Product Name
+                    <select name="product" id="product">
+                        <option value="">Choose a product...</option>
+                        <option value="software">Software Development</option></label>
+
+                    </select>
+
+                    <!-- Star Ratings -->
+                    <div class="rating">
+                    <label>Overall Rating</label>
+                        <label><input type="radio" id="five" name="rating" value="5" required for="five">&star;&star;&star;&star;&star;</label>
+                        <label><input type="radio" id="four" name="rating" value="4" required for="four">&star;&star;&star;&star;</label>
+                        <label><input type="radio" id="three" name="rating" value="3" required for="three">&star;&star;&star;</label>
+                        <label><input type="radio" id="two" name="rating" value="2" required for="two">&star;&star;</label>
+                        <label><input type="radio" id="one" name="rating" value="1" required for="one">&star;</label>
+                    </div>
+
+                    
+                    <label>Date of Installation <input type="date" name="install" required></label>
+                    <label>Review <input type="textarea" name="review"></label>
+                    <label>User Name<input type = "text" name = "user"></label>
+
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <!-- FOOTER HERE -->   
+    <footer>
+        <p>©️<span id="currentyear"></span> Cris Altman</p> 
+        <p> <span id = "year"></span>Last Modified: <span id="lastmodified"></span></p>    
+    </footer>
+</body>
+    
+</html>
