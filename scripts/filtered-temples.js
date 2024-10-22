@@ -65,40 +65,43 @@ const temples = [
 	},
 ];
 
+
 temple.templeName = "San Diego California";
 temple.location = "San Diego, California, United States";
 temple.dedicated = "25 April 1993";
 temple.area = 72000;
 temple.imageUrl
-= "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/1280x800/san-diego-temple-765109-wallpaper.jpg"
+= "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/1280x800/san-diego-temple-765109-wallpaper.jpg";
 
-  {
-	templeName: "Hong Kong China",
-	location: "Hong Kong, China",
-	dedicated: "26 May 1996",
-	area: 51921,
-	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/1200x1920/hong-kong-china-temple-lds-39528-wallpaper.jpg"
-  },
-  {
-	templeName: "St. Louis Missouri",
-	location: "St. Louis, Missouri, United States",
-	dedicated: "1 June 1997",
-	area: 58749,
-	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/1280x800/st-louis-temple-lds-903363-wallpaper.jpg"
-	}
+temple.templeName = "Hong Kong China";
+temple.location = "Hong Kong, China";
+temple.dedicated = "26 May 1996";
+temple.area = 51921;
+temple.imageUrl =
+"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/1200x1920/hong-kong-china-temple-lds-39528-wallpaper.jpg";
+
+temple.templeName = "St. Louis Missouri";
+temple.location = "St. Louis, Missouri, United States";
+temple.dedicated = "1 June 1997";
+temple.area = 58749;
+temple.imageUrl =
+	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/1280x800/st-louis-temple-lds-903363-wallpaper.jpg";
 
 	temples.foreach(temple => {
 
-		for (const key in temples) {
-			console.log(key + ": " + temple[key]);
+		document.getElementById("name").innerHTML = temple[templename]."San Diego";
+		document.getElementById("location").innerHTML = temple[location]."San Diego";
+		document.getElementById("dedicated").innerHTML = temple[dedicated]."San Diego";
+		document.getElementById("area").innerHTML = temple[area]."San Diego";
+		document.getElementById("url").innerHTML = temple[imageurl]."San Diego";
+		
+		for ([key, value] of temples) {
+			document.getElementById("name").innerHTML = temple[templename]
 		}
 	});
 
 	let temple = 
 
-document.getElementById("temp").innerHTML = temple[templename]."San Diego";
 
 
 // dates in footer
