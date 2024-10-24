@@ -19,14 +19,14 @@ h1 {
     padding: 10px;
     font-size: 1.5em;
     font-family: var(--header-font);
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
 }
 
 /*...FORM...*/
 
 form {
-    max-width: 400px;
+    max-width: 500px;
     background-color: #450c48;
     color: #fff;
     font: 700 rem;
@@ -41,13 +41,17 @@ div {
     border: solid 1px #fff;
 }
 
+legend {
+    border: none;
+}
+
 .rating {
     margin: 1rem 0 1rem 0;
 }
 
 select,
+textarea,
 .review input[type="text"],
-.review input[type="textarea"],
 .review input[type="date"]
 {
     display: block;
@@ -55,13 +59,9 @@ select,
     border-radius: 4px;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     padding: .75rem;
     margin-left: -.75rem;  
-}
-
-.review input[type="textarea"]{
-    height: 200px;
 }
 
 .review label {
@@ -78,7 +78,7 @@ select,
     border: solid 0 1px 1px 0 #fff;
     border-radius: 6px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 1rem 0 0 0;
 }
 
@@ -88,6 +88,6 @@ footer {
     padding: 10px; 
     background-color: black;
     color: #fff;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
 }
