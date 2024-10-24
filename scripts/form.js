@@ -38,8 +38,9 @@ products.forEach(item => {
 
 // dates in footer
 const d = new Date();
-let currentyear = d.getFullYear();
+const currentyear = d.getFullYear();
 document.getElementById("currentyear").innerHTML = currentyear;
 
-const date = new Date(document.lastModified);
+const modified = new Date(document.lastModified);
+const date = modified.toLocaleDateString()
 document.getElementById("lastmodified").innerHTML = date;
