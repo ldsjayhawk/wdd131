@@ -43,6 +43,7 @@ div {
 
 legend {
     border: none;
+    padding-top: .75rem
 }
 
 .rating {
@@ -62,6 +63,10 @@ textarea,
     max-width: 500px;
     padding: .75rem;
     margin-left: -.75rem;  
+}
+
+textarea {
+    resize: none;
 }
 
 .review label {

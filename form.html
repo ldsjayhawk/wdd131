@@ -18,41 +18,37 @@
     </header>
     <main>
         <form method = "get" action = "review.html" class="review">
-            <fieldset>
-                    <!-- Product Name Dropdown -->
-                    <label>Product Name
-                    <select name="product" id="product">
-                        <option value="">Choose a product...</option>
-                    </select>
+            <!-- Product Name Dropdown -->
+            <label>Product Name</label>
+            <select name="product" id="product">
+                <option value="">Choose a product...</option>
+            </select>
 
-                    <!-- Star Ratings -->
-                    <Fieldset>
-                        <legend>Overall Rating</legend>
-                        <div class="rating">
-                            <label><input type="radio" id="five" name="rating" value="5" required for="five">&star;&star;&star;&star;&star;</label>
-                            <label><input type="radio" id="four" name="rating" value="4" required for="four">&star;&star;&star;&star;</label>
-                            <label><input type="radio" id="three" name="rating" value="3" required for="three">&star;&star;&star;</label>
-                            <label><input type="radio" id="two" name="rating" value="2" required for="two">&star;&star;</label>
-                            <label><input type="radio" id="one" name="rating" value="1" required for="one">&star;</label>
-                        </div>
-                    </Fieldset>
+            <!-- Star Ratings -->
+            <legend>Overall Rating</legend>
+            <div class="rating">
+                <label for="five"><input type="radio" id="five" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+                <label for="four"><input type="radio" id="four" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                <label for="three"><input type="radio" id="three" name="rating" value="3" required>&star;&star;&star;</label>
+                <label for="two"><input type="radio" id="two" name="rating" value="2" required>&star;&star;</label>
+                <label for="one"><input type="radio" id="one" name="rating" value="1" required>&star;</label>
+            </div>
 
-                    <label>Date of Installation <input type="date" name="install" required></label>
+            <label>Date of Installation <input type="date" name="install" required></label>
 
-                    <div>Useful Features
-                        <label><input type="checkbox" name="durability" value="yes">Durability</label>
-                        <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
-                        <label><input type="checkbox" name="performance" value="yes">Performance</label>
-                        <label><input type="checkbox" name="design" value="yes">Design</label>
-                    </div>
-                    
-                    <label for="review">Written Review</label>
-                    <textarea id="review" name="review" rows="3" cols="40"></textarea>
-                    
-                    <label>User Name<input type = "text" name = "user"></label>
+            <div>Useful Features
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+            </div>
 
-                <input type="submit" value="Post Review">
-            </fieldset>
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="3" cols="40"></textarea>
+            
+            <label>User Name<input type = "text" name = "user"></label>
+
+            <input type="submit" value="Post Review">
         </form>
     </main>
     <!-- FOOTER HERE -->   
