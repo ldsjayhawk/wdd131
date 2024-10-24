@@ -27,6 +27,15 @@ const products = [
     }
   ];
 
+let sortedlist = products
+const prod = document.getElementById("product")
+
+products.forEach(item => {
+    const option = document.createElement('option');
+    option.textContent = item.name;
+    prod.appendChild(option);
+});
+
 // dates in footer
 const d = new Date();
 let currentyear = d.getFullYear();
