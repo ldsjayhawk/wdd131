@@ -7,53 +7,32 @@
     <meta name="description" content="Project for WDD 131">
     <meta name="author" content="Cris Altman">
     <link rel="stylesheet" href="styles/draft.css">
-    <script src="scripts/project.js" defer></script>
+    <script src="scripts/draft.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a>
-        <a href="calendar.html">Calendar</a>
-        <a href="#">Placeholder</a>
+        <a href="signup.html">Sign-up</a>
         <a href="draft.html">Draft</a>
+        <a href="roster.html">Roster</a>
       </nav>
     </header>
     <main>
       <figure id="banner">
         <img src="images/FGM-Header.webp" alt="FGM Banner">
         <figcaption></figcaption>
-    </figure>
-      <h1><span id="draftYear"></span> Franchise GM Draft Room </h1>
+      </figure>
+      <h1><span id="draftyear"></span> Franchise GM Draft Room </h1>
       <div class="grid">
-        <div>
-          <h3>Player List</h3>
-          <ol id="players">
-            <li>Player 1</li>
-            <li>Player 2</li>
-            <li>Player 3</li>
-            <li>Player 4</li>
-            <li>Player 5</li>
-            <li>Player 6</li>
-            <li>Player 7</li>
-            <li>Player 8</li>
-            <li>Player 9</li>
-            <li>Player 10</li>
-          </ol>
+        <div class="listContainer">
+          <h3>Team Selections</h3>
+            <ol id="teamList">
+            </ol>
         </div>
         <div>
-          <h3>Team Selections</h3>
-            <ol id="team">
-              <li>Selection 1</li>
-              <li>Selection 2</li>
-              <li>Selection 3</li>
-              <li>Selection 4</li>
-              <li>Selection 5</li>
-              <li>Selection 6</li>
-              <li>Selection 7</li>
-              <li>Selection 8</li>
-              <li>Selection 9</li>
-              <li>Selection 10</li>
-            </ol>
+          <h3>Player List</h3>
+          <ul id="playerList">
+          </ul>
         </div>
     </main>
   </div>

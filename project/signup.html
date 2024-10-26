@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Franchise GM | Home</title>
+    <meta name="description" content="FGM Sign-up Form">
+    <meta name="author" content="Cris Altman">
+    <link rel="stylesheet" href="styles/signup.css">
+    <!-- <link rel="stylesheet" href="styles/temples-large.css"> -->
+    <script src="scripts/signup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
+        <a href="signup.html">Sign-up</a>
+        <a href="draft.html">Draft</a>
+        <a href="roster.html">Roster</a>
+      </nav>
+    </header>
+    <main>
+      <figure id="banner">
+        <img src="images/FGM-Header.webp" alt="FGM Banner">
+        <figcaption></figcaption>
+      </figure>
+      <h1>Franchise GM Sign-up</h1>
+        <div class="grid">
+      <form method = "get" action = "request.html" class="signup">
+
+        <label>First Name* <input type = "text" name = "fname" required></label>
+        <label>Fantrax ID* <input type = "text" name = "User" required></label>
+
+        <!-- Product Name Dropdown -->
+        <label>Favorite MLB Team
+        <select name="mlb" id="mlb" class="teamChooser">
+            <option value="">Choose a team...</option>
+        </select></label>
+
+        <!-- Product Name Dropdown -->
+        <label>Desired FGM Team*
+            <select name="fgm" id="fgm" class="teamChooser" required>
+                <option value="">Choose a team...</option>
+            </select></label>
+        
+        <div>Active participation requires actively participating in free agency, the amateur draft, setting lineups and voting in polls.
+            <label><input type="radio" id="active" name="active" value="yes" Required>Yes</label>
+            <label><input type="radio" id="active" name="active" value="yes" Required>No</label>
+        </div>
+
+        <input type="submit" value="Request Team">
+    </form>
+    </div>
+</main>
+<footer>
+    <p>©️<span id="currentyear"></span> Cris Altman - Modified: <span id="lastmodified"></span></p>
+</footer>
+  </body>
+</html>
