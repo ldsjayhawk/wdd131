@@ -1,0 +1,72 @@
+/*...COMMON...*/
+
+    /*...FONTS... */
+    @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Markazi+Text&display=swap');
+
+    :root {
+        --heading-font: Markazi Text, sans-serif;
+        --paragraph-font: Figtree, sans-serif;
+    }
+
+    /*...NAVIGATION... */
+
+    nav {
+        background-color: #000000;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        color:white;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        border: #fff solid 2px;
+        border-radius: 5px;
+    }
+
+    body {
+        font-family: var(--paragraph-font);
+    }
+
+    /*...HEADER IMAGE... */
+
+    main {
+        padding: 0 2rem 0 2rem;
+    }
+
+    main img {
+        border: 1px solid #000;
+        padding: 2px;
+        box-shadow: 0 0 50px gray;
+
+    }
+
+    h1 {
+        color: #5a8b39;
+        border-bottom: #000 solid 2px;
+        font-family: var(--heading-font);
+        margin: 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    div {
+        padding: 5px;
+    }
+
+    footer{
+        font-size: .8em;
+        background-color: #000;
+        color: #fff;
+        padding: .5rem;
+        text-align: center;
+    }

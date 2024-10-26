@@ -1,10 +1,3 @@
-// hover icon in nav bar
-const baseball = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-// baseball.addEventListener('mouseover', (event) => { });
-//     event.target.style.color = "orange";
-
 // dates in footer
 const d = new Date();
 const currentyear = d.getFullYear();
