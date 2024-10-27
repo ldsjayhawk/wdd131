@@ -1,10 +1,10 @@
-const hamburger = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+// const hamburger = document.querySelector('#menu');
+// const navigation = document.querySelector('.navigation');
 
-hamburger.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamburger.classList.toggle('open');
-});
+// hamburger.addEventListener('click', () => {
+// 	navigation.classList.toggle('open');
+// 	hamburger.classList.toggle('open');
+// });
 
 const temples = [
 	{
@@ -63,54 +63,75 @@ const temples = [
 	  imageUrl:
 	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 	},
-];
+
+	{
+		templeName: "San Diego California",
+		location: "San Diego, California, United States",
+		dedicated: "25 April 1993",
+		area: 72000,
+		imageUrl:  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/1280x800/san-diego-temple-765109-wallpaper.jpg"
+	},
+
+	{
+		templeName: "Hong Kong China",
+		location: "Hong Kong, China",
+		dedicated: "26 May 1996",
+		area: 51921,
+		imageUrl:
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/1200x1920/hong-kong-china-temple-lds-39528-wallpaper.jpg"
+	},
+
+	{		
+		templeName: "St. Louis Missouri",
+		location: "St. Louis, Missouri, United States",
+		dedicated: "1 June 1997",
+		area: 58749,
+		imageUrl:
+			"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/1280x800/st-louis-temple-lds-903363-wallpaper.jpg"
+	}]
+
+	temples.forEach(temple => {
+		const templecard = document.getElementById('templecard');
+		templecard.innerHTML += 
+    	`<div>
+		<h2>${temple.templeName}</h2>
+    	<p>Location: ${temple.location}</p>
+		<p>Dedicated: ${temple.dedicated}</p>
+    	<p>Size: ${temple.area} sq ft </p>
+		<figure>
+        <img src=${temple.imageUrl} alt="Kanssas City Temple ">
+        </figure>
+		</div>`;
 
 
-temple.templeName = "San Diego California";
-temple.location = "San Diego, California, United States";
-temple.dedicated = "25 April 1993";
-temple.area = 72000;
-temple.imageUrl
-= "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/san-diego-california/1280x800/san-diego-temple-765109-wallpaper.jpg";
+		// li.textContent = temple.templename;
+		// li.textContent = temple.location;
+		// li.textContent = temple.dedicated;
+		// li.textContent = temple.area;
+		// li.textContent = temple.imageurl;
+		// templecard.appendChild(li);
 
-temple.templeName = "Hong Kong China";
-temple.location = "Hong Kong, China";
-temple.dedicated = "26 May 1996";
-temple.area = 51921;
-temple.imageUrl =
-"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/1200x1920/hong-kong-china-temple-lds-39528-wallpaper.jpg";
-
-temple.templeName = "St. Louis Missouri";
-temple.location = "St. Louis, Missouri, United States";
-temple.dedicated = "1 June 1997";
-temple.area = 58749;
-temple.imageUrl =
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-louis-missouri/1280x800/st-louis-temple-lds-903363-wallpaper.jpg";
-
-	temples.foreach(temple => {
-
-		document.getElementById("name").innerHTML = temple[templename]."San Diego";
-		document.getElementById("location").innerHTML = temple[location]."San Diego";
-		document.getElementById("dedicated").innerHTML = temple[dedicated]."San Diego";
-		document.getElementById("area").innerHTML = temple[area]."San Diego";
-		document.getElementById("url").innerHTML = temple[imageurl]."San Diego";
+	}
+);
 		
-		for ([key, value] of temples) {
-			document.getElementById("name").innerHTML = temple[templename]
-		}
-	});
+	// document.getElementById("name").innerHTML = temple[templename]."San Diego";
+	// document.getElementById("location").innerHTML = temple[location]."San Diego";
+	// 	document.getElementById("dedicated").innerHTML = temple[dedicated]."San Diego";
+	// 	document.getElementById("area").innerHTML = temple[area]."San Diego";
+	// 	document.getElementById("url").innerHTML = temple[imageurl]."San Diego";
+		
+	// 	for ([key, value] of temples) {
+	// 		document.getElementById("name").innerHTML = temple[templename]
 
-	let temple = 
+	// let temple = 
 
 
 
 // dates in footer
-const d = new Date();
-let currentyear = d.getFullYear();
-document.getElementById("currentyear").innerHTML = currentyear;
+// const d = new Date();
+// let currentyear = d.getFullYear();
+// document.getElementById("currentyear").innerHTML = currentyear;
 
-const date = new Date(document.lastModified);
-document.getElementById("lastmodified").innerHTML = date;
-
-
-
+// const date = new Date(document.lastModified);
+// document.getElementById("lastmodified").innerHTML = date;
+	
