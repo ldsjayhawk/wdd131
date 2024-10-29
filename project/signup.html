@@ -6,6 +6,9 @@
     <title>Franchise GM | Home</title>
     <meta name="description" content="FGM Sign-up Form">
     <meta name="author" content="Cris Altman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/signup.css">
     <!-- <link rel="stylesheet" href="styles/signup-large.css"> -->
     <script src="scripts/signup.js" defer></script>
@@ -20,35 +23,38 @@
       </nav>
     </header>
     <main>
-      <figure id="banner">
-        <img src="images/FGM-Header.webp" alt="FGM Banner">
-        <figcaption></figcaption>
-      </figure>
+      <div class="hero">
+        <picture>
+            <source media="(min-width: 750px)" srcset="images/fgmheader.webp">
+            <img src="images/fgmheader.webp" alt="FGM Banner" width="400">
+        </picture>    
       <h1>Franchise GM Sign-up</h1>
         <div class="grid">
-      <form method = "get" action = "request.html" class="signup">
+          <form method = "get" action = "request.html" class="signup">
+            <fieldset>
+              <label>First Name* <input type = "text" name = "fname" required></label>
+              <label>Fantrax ID* <input type = "text" name = "User" required></label>
+            </fieldset>
 
-        <label>First Name* <input type = "text" name = "fname" required></label>
-        <label>Fantrax ID* <input type = "text" name = "User" required></label>
+            <fieldset>
+              <label>Favorite MLB Team
+              <select name="mlb" id="mlb" class="teamChooser">
+                  <option value="">Choose a team...</option>
+              </select></label>
 
-        <!-- Product Name Dropdown -->
-        <label>Favorite MLB Team
-        <select name="mlb" id="mlb" class="teamChooser">
-            <option value="">Choose a team...</option>
-        </select></label>
+              <label>Desired FGM Team*
+              <select name="fgm" id="fgm" class="teamChooser" required>
+                  <option value="">Choose a team...</option>
+              </select></label>
+            </fieldset>
+            <fieldset>
+              <p id="#active">Do you agree to actively participate
+                in free agency, the amateur draft, setting lineups and voting in polls?</p>
+                <label class="radio-active">Yes<input type="radio" id="active" name="active" value="yes" Required></label>
+                <label class="radio-active">No<input type="radio" id="active" name="active" value="no" Required></label>
+            </fieldset>
 
-        <!-- Product Name Dropdown -->
-        <label>Desired FGM Team*
-            <select name="fgm" id="fgm" class="teamChooser" required>
-                <option value="">Choose a team...</option>
-            </select></label>
-        
-        <div>Active participation requires actively participating in free agency, the amateur draft, setting lineups and voting in polls.
-            <label><input type="radio" id="active" name="active" value="yes" Required>Yes</label>
-            <label><input type="radio" id="active" name="active" value="yes" Required>No</label>
-        </div>
-
-        <input type="submit" value="Request Team">
+            <input type="submit" value="Request Team">
     </form>
     </div>
 </main>

@@ -32,7 +32,7 @@ players = [
 ]
 
 const playerList = document.querySelector('#playerList')
-const button = document.querySelector('button');
+const button = document.querySelector('.button');
 const teamList = document.querySelector('#teamList');
 
 players.forEach(item => {

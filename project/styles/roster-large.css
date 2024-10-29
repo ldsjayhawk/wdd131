@@ -1,0 +1,25 @@
+@media (min-width: 31rem) {
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+    
+    
+    
+    /* #menu {
+        display: none; 
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: block;
+    }
+    
+    .navigation ul {
+        display: flex;
+        flex: 1 1 100%;
+    } */

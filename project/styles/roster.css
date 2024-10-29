@@ -1,62 +1,102 @@
 /*...COMMON...*/
 
     /*...FONTS... */
-    @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Markazi+Text&display=swap');
 
     :root {
-        --heading-font: Markazi Text, sans-serif;
+        --heading-font: Arial, sans-serif;
         --paragraph-font: Figtree, sans-serif;
     }
 
     /*...NAVIGATION... */
 
-    nav {
-        background-color: #000000;
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    nav a {
-        color:white;
+    #menu {
         display: block;
-        padding: 5px;
+        font-size: 1.5rem;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
+    
+    .nav {
+        list-style-type: none;
+        max-width: 250px;
+        padding-top: 20px;
+        background-color: #000;
+    }
+    
+    .nav li {
+        display: none;
+    }
+    
+    .nav.open li{
+        display: block;
+    }
+    
+    .nav a {
+        display: block;
+        color: #fff;
+        padding: 1rem;
         text-decoration: none;
     }
-
-    nav a:hover {
-        border: #fff solid 2px;
-        border-radius: 5px;
+    
+     .nav.open {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex: 1;
     }
+    
+    .nav a:hover {
+        background-color: #5a8b39;
+        font-weight: 700;
+        border: #fff solid 2px;
+        border-radius: 10px;
+        max-width: 100px;
+    }
+    
+    /*...MISC... */
 
     body {
         font-family: var(--paragraph-font);
     }
-
-    /*...HEADER IMAGE... */
-
-    main {
-        padding: 0 2rem 0 2rem;
+    
+    div {
+        padding: 5px;
     }
 
-    main img {
+    /*...MAIN IMAGE... */
+
+    .hero img {
         border: 1px solid #000;
-        padding: 2px;
+        padding: 5px;
         box-shadow: 0 0 50px gray;
-
+        max-width: 25rem;
+        margin: .625rem 0 .625rem 0;
+        width: 96%;
     }
+
+    /*...HEADER - FOOTER ... */
 
     h1 {
         color: #5a8b39;
         border-bottom: #000 solid 2px;
         font-family: var(--heading-font);
         margin: 0;
+        font-size: 1.4em;
     }
 
-    h3 {
+    h2,h3 {
         margin: 0;
+        padding: .625rem;
     }
 
     div {
@@ -69,4 +109,30 @@
         color: #fff;
         padding: .5rem;
         text-align: center;
+    }
+
+    /*...ROSTER PAGE... */
+
+    #playercard {
+        text-align: center;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        border-color: #fff; 
+        padding-bottom: 1rem;
+    }
+    
+    .player {   
+        background-color: #004687;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    
+    .player img {
+        border: solid 1px #fff;
+    }
+
+    .team {
+        color: #004687;
     }

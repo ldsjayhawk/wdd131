@@ -1,10 +1,9 @@
 /*...COMMON...*/
 
     /*...FONTS... */
-    @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Markazi+Text&display=swap');
 
     :root {
-        --heading-font: Markazi Text, sans-serif;
+        --heading-font: Arial, sans-serif;
         --paragraph-font: Figtree, sans-serif;
     }
 
@@ -52,11 +51,12 @@
         color: #5a8b39;
         border-bottom: #000 solid 2px;
         font-family: var(--heading-font);
+        padding-top: 10px;
         margin: 0;
     }
 
-    h3 {
-        margin: 0;
+    h4, p {
+        margin-left: 20px;
     }
 
     div {
@@ -69,21 +69,4 @@
         color: #fff;
         padding: .5rem;
         text-align: center;
-    }
-
-    /*...X PAGE... */
-              
-    /*...BODY... */
-
-    .grid {
-        display: grid;
-        gap: 5px;
-        align-items: center;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-    }
-
-    .begin, .free-agency {
-        margin: 0;
-        border: solid 2px #000;
     }

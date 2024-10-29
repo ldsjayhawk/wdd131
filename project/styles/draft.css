@@ -1,10 +1,9 @@
 /*...COMMON...*/
 
     /*...FONTS... */
-    @import url('https://fonts.googleapis.com/css2?family=Figtree&family=Markazi+Text&display=swap');
 
     :root {
-        --heading-font: Markazi Text, sans-serif;
+        --heading-font: Arial, sans-serif;
         --paragraph-font: Figtree, sans-serif;
     }
 
@@ -12,11 +11,12 @@
 
     nav {
         background-color: #000000;
-        padding: 10px;
+        padding: .625rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        max-width: 25rem;
     }
 
     nav a {
@@ -30,46 +30,50 @@
         border: #fff solid 2px;
         border-radius: 5px;
     }
+    
+    /*...MISC... */
 
     body {
         font-family: var(--paragraph-font);
+        max-width: 25rem;
     }
-
-    /*...HEADER IMAGE... */
-
-    main {
-        padding: 0 2rem 0 2rem;
-    }
-
-    main img {
-        border: 1px solid #000;
-        padding: 2px;
-        box-shadow: 0 0 50px gray;
-
-    }
-
-    h1 {
-        color: #5a8b39;
-        border-bottom: #000 solid 2px;
-        font-family: var(--heading-font);
-        margin: 0;
-    }
-
-    h3 {
-        margin: 0;
-    }
-
+    
     div {
         padding: 5px;
     }
 
-    footer{
-        font-size: .8em;
-        background-color: #000;
-        color: #fff;
-        padding: .5rem;
-        text-align: center;
+    /*...MAIN IMAGE... */
+
+    .hero img {
+        border: 1px solid #000;
+        padding: 5px;
+        box-shadow: 0 0 50px gray;
+        max-width: 25rem;
+        margin: .625rem 0 .625rem 0;
+        width: 96%;
     }
+
+        /*...HEADER - FOOTER ... */
+
+        h1 {
+            color: #5a8b39;
+            border-bottom: #000 solid 2px;
+            font-family: var(--heading-font);
+            margin: 0;
+            font-size: 1.4em;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        footer{
+            font-size: .8em;
+            background-color: #000;
+            color: #fff;
+            padding: .5rem;
+            text-align: center;
+        }
 
 /*...DRAFT PAGE... */
 
@@ -89,24 +93,20 @@
     }
 
     /*...TEAM LIST...*/
-    
-    /* button:hover {
-        background-color: #eee;
-        color: #000;
-    } */
+
 
     /*...PLAYER LIST...*/
 
     button {
-        background-color: #eee;
-        color: #000;
+        background-color: #5a8b39;
+        color: #fff;
         padding: .75rem;
         width: 200px;
         font-size: .9em;
     }
 
     button:hover {
-        background-color: #5a8b39;
+        background-color: #000;
         color: #fff;
         font-weight: 700;
     }

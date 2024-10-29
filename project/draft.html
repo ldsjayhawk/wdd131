@@ -6,6 +6,9 @@
     <title>Franchise GM | Sign-up</title>
     <meta name="description" content="Project for WDD 131">
     <meta name="author" content="Cris Altman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/draft.css">
     <!-- <link rel="stylesheet" href="styles/draft-large.css"> -->
     <script src="scripts/draft.js" defer></script>
@@ -13,16 +16,18 @@
   <body>
     <header>
       <nav>
+        <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
         <a href="signup.html">Sign-up</a>
         <a href="draft.html">Draft</a>
         <a href="roster.html">Roster</a>
       </nav>
     </header>
     <main>
-      <figure id="banner">
-        <img src="images/FGM-Header.webp" alt="FGM Banner">
-        <figcaption></figcaption>
-      </figure>
+      <div class="hero">
+        <picture>
+            <source media="(min-width: 750px)" srcset="images/fgmheader.webp">
+            <img src="images/fgmheader.webp" alt="FGM Banner" width="400">
+        </picture>  
       <h1><span id="draftyear"></span> Franchise GM Draft Room </h1>
       <div class="grid">
         <div class="listContainer">
