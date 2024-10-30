@@ -1,14 +1,4 @@
-/* medium - 2 columns */
-@media screen and (min-width: 550px) {
-	#playercard{
-        grid-template-columns: auto auto;
-    }
-
-}
-
-/* large - 3 columns */
 @media screen and (min-width: 700px) {
-
 	#menu {
 		display: none; 
 	}
@@ -32,16 +22,4 @@
 	.hero img {
 		margin: .625rem 0 .625rem 7rem;
 	}
-
-	h1 {
-        margin: 0 7rem;
-    }
-
-    h2{
-        margin: 0 7rem;
-    }
-
-	#playercard{
-        grid-template-columns: auto auto auto;
-    }
 }

@@ -1,3 +1,11 @@
+const hamburger = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamburger.classList.toggle('open');
+});
+
 players = 
     [
         {pos: "C", player: "Freddy Fermin", contract: "P-2026", salary: "0.5", imageUrl: "images/fermin.webp"},
@@ -15,9 +23,9 @@ players =
 	players.forEach(player => {
 		const playercard = document.getElementById('playercard');
 		playercard.innerHTML += 
-    	`<div class="player">
+        `<div class="player">
 		<figure>
-        <img src=${player.imageUrl} loading="lazy" width="100px" height="150px">
+        <img src=${player.imageUrl} alt="${player.player}" loading="lazy" width="100px" height="150px">
         </figure>
 		<h2>${player.pos}</h2>
     	<p>Player: ${player.player}</p>

@@ -8,61 +8,60 @@
     }
 
     /*...NAVIGATION... */
+    
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    color: #fff;
+}
 
-    #menu {
-        display: block;
-        font-size: 1.5rem;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        color: #fff;
-    }
-    
-    #menu::before {
-        content: "☰";
-    }
-    
-    #menu.open::before {
-        content: "❌";
-    }
-    
-    .nav {
-        list-style-type: none;
-        max-width: 250px;
-        padding-top: 20px;
-        background-color: #000;
-    }
-    
-    .nav li {
-        display: none;
-    }
-    
-    .nav.open li{
-        display: block;
-    }
-    
-    .nav a {
-        display: block;
-        color: #fff;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    
-     .nav.open {
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        flex: 1;
-    }
-    
-    .nav a:hover {
-        background-color: #5a8b39;
-        font-weight: 700;
-        border: #fff solid 2px;
-        border-radius: 10px;
-        max-width: 100px;
-    }
-    
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 30px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.open li{
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+ .navigation.open {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex: 1;
+}
+
+.navigation a:hover {
+    background-color: #3b5b26;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    max-width: 100px;
+}
     /*...MISC... */
 
     body {
@@ -79,23 +78,25 @@
         border: 1px solid #000;
         padding: 5px;
         box-shadow: 0 0 50px gray;
-        max-width: 25rem;
-        margin: .625rem 0 .625rem 0;
-        width: 96%;
+        margin: .625rem 0 .625rem 1.5rem;
+        width: 80%;
     }
 
     /*...HEADER - FOOTER ... */
 
     h1 {
-        color: #5a8b39;
+        color: #3b5b26;
         border-bottom: #000 solid 2px;
         font-family: var(--heading-font);
-        margin: 0;
+        margin: 0 1rem;
         font-size: 1.4em;
     }
 
+    h2{
+        margin: 0 1rem;
+    }
+        
     h2,h3 {
-        margin: 0;
         padding: .625rem;
     }
 
@@ -116,7 +117,7 @@
     #playercard {
         text-align: center;
         display: grid;
-        gap: 2rem;
+        gap: .5rem;
         grid-template-columns: auto;
         justify-content: space-evenly;
         border-color: #fff; 

@@ -10,24 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/signup.css">
-    <!-- <link rel="stylesheet" href="styles/signup-large.css"> -->
+    <link rel="stylesheet" href="styles/signup-large.css">
     <script src="scripts/signup.js" defer></script>
   </head>
   <body>
     <header>
+      <a id="menu" href="javascript:void(0)"></a>
       <nav>
-        <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
-        <a href="signup.html">Sign-up</a>
-        <a href="draft.html">Draft</a>
-        <a href="roster.html">Roster</a>
+        <ul class="navigation">
+          <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
+          <li><a href="signup.html">Sign-up</a></li>
+          <li><a href="draft.html">Draft</a></li>        
+          <li><a href="roster.html">Roster</a></li>        
+        </ul>
       </nav>
     </header>
     <main>
       <div class="hero">
         <picture>
-            <source media="(min-width: 750px)" srcset="images/fgmheader.webp">
+            <source media="(min-width: 750px)" srcset="images/fgm-header.webp">
             <img src="images/fgmheader.webp" alt="FGM Banner" width="400">
         </picture>    
+      </div>
       <h1>Franchise GM Sign-up</h1>
         <div class="grid">
           <form method = "get" action = "request.html" class="signup">
@@ -55,8 +59,8 @@
             </fieldset>
 
             <input type="submit" value="Request Team">
-    </form>
-    </div>
+          </form>
+        </div>
 </main>
 <footer>
     <p>©️<span id="currentyear"></span> Cris Altman - Modified: <span id="lastmodified"></span></p>

@@ -8,34 +8,65 @@
     }
 
     /*...NAVIGATION... */
-
-    nav {
-        background-color: #000000;
-        padding: .625rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        max-width: 25rem;
-    }
-
-    nav a {
-        color:white;
+    
+    #menu {
         display: block;
-        padding: 5px;
-        text-decoration: none;
+        font-size: 1.5rem;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+        color: #fff;
     }
-
-    nav a:hover {
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
+    
+    .navigation {
+        list-style-type: none;
+        padding: 30px;
+        background-color: #000;
+        margin: 0 auto;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation.open li{
+        display: block;
+    }
+    
+    .navigation a {
+        display: block;
+        color: #fff;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: left;
+    }
+    
+     .navigation.open {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex: 1;
+    }
+    
+    .navigation a:hover {
+        background-color: #3b5b26;
         border: #fff solid 2px;
-        border-radius: 5px;
+        border-radius: 10px;
+        max-width: 100px;
     }
     
     /*...MISC... */
 
     body {
         font-family: var(--paragraph-font);
-        max-width: 25rem;
     }
     
     div {
@@ -48,15 +79,14 @@
         border: 1px solid #000;
         padding: 5px;
         box-shadow: 0 0 50px gray;
-        max-width: 25rem;
-        margin: .625rem 0 .625rem 0;
-        width: 96%;
+        margin: .625rem 0 .625rem 7rem;
+        width: 80%;
     }
 
         /*...HEADER - FOOTER ... */
 
         h1 {
-            color: #5a8b39;
+            color: #3b5b26;
             border-bottom: #000 solid 2px;
             font-family: var(--heading-font);
             margin: 0;
@@ -92,21 +122,32 @@
         padding: 2px;
     }
 
-    /*...TEAM LIST...*/
-
-
-    /*...PLAYER LIST...*/
+/*...TEAM LIST...*/
+    .listContainer {
+        border: solid #000 2px;
+        min-height: 34rem;
+    }
 
     button {
-        background-color: #5a8b39;
+        background-color: #eee;
         color: #fff;
         padding: .75rem;
         width: 200px;
         font-size: .9em;
-    }
+        }
 
-    button:hover {
-        background-color: #000;
-        color: #fff;
-        font-weight: 700;
-    }
+/*...PLAYER LIST...*/
+
+button {
+    background-color: #3b5b26;
+    color: #fff;
+    padding: .75rem;
+    width: 200px;
+    font-size: .9em;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+}

@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/draft.css">
-    <!-- <link rel="stylesheet" href="styles/draft-large.css"> -->
+    <link rel="stylesheet" href="styles/draft-large.css">
     <script src="scripts/draft.js" defer></script>
   </head>
   <body>
     <header>
+      <a id="menu" href="javascript:void(0)"></a>
       <nav>
-        <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
-        <a href="signup.html">Sign-up</a>
-        <a href="draft.html">Draft</a>
-        <a href="roster.html">Roster</a>
+        <ul class="navigation">
+          <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
+          <li><a href="signup.html">Sign-up</a></li>
+          <li><a href="draft.html">Draft</a></li>        
+          <li><a href="roster.html">Roster</a></li>        
+        </ul>
       </nav>
     </header>
     <main>
@@ -28,6 +31,7 @@
             <source media="(min-width: 750px)" srcset="images/fgmheader.webp">
             <img src="images/fgmheader.webp" alt="FGM Banner" width="400">
         </picture>  
+      <div>
       <h1><span id="draftyear"></span> Franchise GM Draft Room </h1>
       <div class="grid">
         <div class="listContainer">
@@ -35,7 +39,7 @@
             <ol id="teamList">
             </ol>
         </div>
-        <div>
+        <div class="listContainer">
           <h3>Player List</h3>
           <ul id="playerList">
           </ul>

@@ -1,3 +1,11 @@
+const hamburger = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamburger.classList.toggle('open');
+});
+
 players = [
     {rank: "1",
     player:  "Charlie Condon",
@@ -48,17 +56,6 @@ players.forEach(item => {
         playerList.removeChild('li');
     };
 });
-
-// function displayTeamList() {
-//     team.forEach(item => {
-//         const li = document.createElement('li');
-//         const button = document.createElement('button');
-//         button.textContent = item.player;
-//         li.append(button);
-//         TeamList.appendChild(li);
-//     };
-// );
-// };
 
 // dates in footer
 const d = new Date();
