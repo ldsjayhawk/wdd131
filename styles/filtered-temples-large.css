@@ -1,13 +1,13 @@
 	
 /* medium - 2 columns */
-@media (min-width: 550px) {
-	.grid-container{
+@media screen and (min-width: 550px) {
+	#templecard{
 		grid-template-columns: auto auto;	
 	}
 }
 
 /* large - 3 columns */
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
 
 	#menu {
 		display: none; 
@@ -27,7 +27,7 @@
 		flex: 1 1 100%;
 	}
 
-	.grid-container{
+	#templecard{
 		grid-template-columns: auto auto auto;
 	}
 }

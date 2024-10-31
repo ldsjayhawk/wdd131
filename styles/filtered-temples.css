@@ -1,29 +1,24 @@
-/*...FONTS...*/
+/*...ENTIRE DOCUMENT...*/
+body {
+    font-family: Archivo, sans-serif;
+}
 
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-    
-    
-    /*...ENTIRE DOCUMENT...*/
-    body {
-        font-family: Archivo, sans-serif;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    header, footer{
-        background-color: darkblue;
-        gap: 5px;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    header {
-    display: flex;
+header, footer{
+    background-color: darkblue;
+    gap: 5px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header {
+display: flex;
 }
 
 h1 {
@@ -100,6 +95,9 @@ main {
 
 figure img {
     width: 200px;
+    margin: 5px;
+    border: solid 1px #999;
+    box-shadow: #000;
 }
 
 figcaption, footer {
@@ -108,14 +106,22 @@ figcaption, footer {
 }
 
 #templecard {
-    background-color: #e0e1e3;
     text-align: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    grid-template-columns: auto;
     justify-content: space-evenly;
-    gap: 10px;
     border-color: #fff; 
 }
 
+.temple {   
+    background-color: #e0e1e3;
+    padding: 10px;
+}
+
+.temple img {
+    box-shadow: 0 0 10px #646464;
+    margin: 10px;
+}
 
 
