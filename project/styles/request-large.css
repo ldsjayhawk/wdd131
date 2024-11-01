@@ -1,0 +1,39 @@
+/* large - 3 columns */
+@media screen and (min-width: 700px) {
+
+	#menu {
+		display: none; 
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		justify-content: space-evenly;
+	}
+
+	.navigation li {
+		display: block;
+	}
+	
+	.navigation ul {
+		display: flex;
+		flex: 1 1 100%;
+	}
+
+	.hero img {
+		margin: .625rem 0 .625rem 7rem;
+	}
+
+	h1 {
+        margin: 0 7rem;
+    }
+
+    h2 {
+        margin: 2rem 0 0 7rem;
+    }
+
+    p {
+        margin: 0 0 0 7rem;
+    }
+}

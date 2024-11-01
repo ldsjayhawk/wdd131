@@ -9,28 +9,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital@0;1&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="styles/request.css">
+    <link rel="stylesheet" href="styles/request-large.css">
+    <script src="scripts/request.js" defer></script>
   </head>
   <body>
     <header>
+      <a id="menu" href="javascript:void(0)"></a>
       <nav>
-        <nav>
-          <a href="signup.html">Sign-up</a>
-          <a href="draft.html">Draft</a>
-          <a href="roster.html">Roster</a>
-        </nav>
+        <ul class="navigation">
+          <!-- <a href="https://www.profsl.com/smf/index.php?board=9">League Main</a> -->
+          <li><a href="signup.html">Sign-up</a></li>
+          <li><a href="draft.html">Draft</a></li>        
+          <li><a href="roster.html">Roster</a></li>        
+        </ul>
       </nav>
     </header>
 <body>
-    
 <main>
-    <h1>Franchise GM Tools</h1>
-    <img src="images/FGM-Header.png" alt="FGM Banner" width="500">
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 700px)" srcset="images/fgmheader-large.webp">
+      <source media="(min-width: 500px)" srcset="images/fgmheader-large.webp">
+      <img src="images/fgm-header.webp" alt="FGM Banner" width="400">
+    </picture>     
+  </div>
+  <h1>Franchise GM Tools</h1>
     <div class="box">
-      <h2>Request</h2>
+      <h2>Thank you for submitting your request!</h2>
     <main>
-        <p><span class="label"></span><span class="visits"></span></p>
+      <p><span class="label"></span><span class="visits"></span>  Your request will be reviewed.  We will contact you soon.</p>
     </main>
 
 
